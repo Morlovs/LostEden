@@ -1,0 +1,87 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>Bokeh Plot</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.2.3.min.js" integrity="sha384-T2yuo9Oe71Cz/I4X9Ac5+gpEa5a8PpJCDlqKYO0CfAuEszu1JrXLl8YugMqYe3sM" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.2.3.min.js" integrity="sha384-98GDGJ0kOMCUMUePhksaQ/GYgB3+NH9h996V88sh3aOiUNX3N+fLXAtry6xctSZ6" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.2.3.min.js" integrity="sha384-89bArO+nlbP3sgakeHjCo1JYxYR5wufVgA3IbUvDY+K7w4zyxJqssu7wVnfeKCq8" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="967059cb-8d4e-445e-9f26-72a825b8dcb5" data-root-id="1258"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="1486">
+          {"a4c6e6de-821a-4b67-95cd-30648fbe7a47":{"roots":{"references":[{"attributes":{"columns":[{"id":"1252"},{"id":"1253"},{"id":"1254"},{"id":"1255"},{"id":"1256"},{"id":"1257"}],"height":2000,"source":{"id":"1251"},"view":{"id":"1259"}},"id":"1258","type":"DataTable"},{"attributes":{"editor":{"id":"1269"},"field":"\u0410\u043a\u0442\u0438\u0432 \u0434\u043d\u0435\u0439","formatter":{"id":"1270"},"title":"\u0410\u043a\u0442\u0438\u0432 \u0434\u043d\u0435\u0439"},"id":"1255","type":"TableColumn"},{"attributes":{},"id":"1271","type":"StringEditor"},{"attributes":{"source":{"id":"1251"}},"id":"1259","type":"CDSView"},{"attributes":{},"id":"1272","type":"StringFormatter"},{"attributes":{},"id":"1273","type":"StringEditor"},{"attributes":{},"id":"1274","type":"StringFormatter"},{"attributes":{"editor":{"id":"1267"},"field":"\u0410\u043a\u0442\u0438\u0432","formatter":{"id":"1268"},"title":"\u0410\u043a\u0442\u0438\u0432"},"id":"1254","type":"TableColumn"},{"attributes":{},"id":"1262","type":"Selection"},{"attributes":{"editor":{"id":"1265"},"field":"\u0411\u0421","formatter":{"id":"1266"},"title":"\u0411\u0421"},"id":"1253","type":"TableColumn"},{"attributes":{"editor":{"id":"1263"},"field":"\u0418\u043c\u044f","formatter":{"id":"1264"},"title":"\u0418\u043c\u044f"},"id":"1252","type":"TableColumn"},{"attributes":{},"id":"1261","type":"UnionRenderers"},{"attributes":{},"id":"1264","type":"StringFormatter"},{"attributes":{},"id":"1263","type":"StringEditor"},{"attributes":{},"id":"1270","type":"StringFormatter"},{"attributes":{},"id":"1265","type":"StringEditor"},{"attributes":{},"id":"1266","type":"StringFormatter"},{"attributes":{"editor":{"id":"1273"},"field":"\u0412 \u0433\u0438\u043b\u044c\u0434\u0438\u0438 \u0441","formatter":{"id":"1274"},"title":"\u0412 \u0433\u0438\u043b\u044c\u0434\u0438\u0438 \u0441"},"id":"1257","type":"TableColumn"},{"attributes":{"data":{"index":[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48],"\u0410\u043a\u0442\u0438\u0432":[71430,71430,17000,65030,71430,65830,71430,44430,19600,17000,71430,52550,67430,71430,60550,62750,37280,42200,51030,66950,60950,43160,66950,70630,67480,36600,52760,18000,62630,48080,11800,40280,43640,12480,42150,33080,47400,53000,61350,61350,20600,62270,44080,54630,0,51750,25280,54950,68550],"\u0410\u043a\u0442\u0438\u0432 \u0434\u043d\u0435\u0439":{"__ndarray__":"w/UoXI8CNUDD9ShcjwI1QAAAAAAAABRA4XoUrkchM0DD9ShcjwI1QFyPwvUoXDNAw/UoXI8CNUCkcD0K1yMqQArXo3A9ChdAAAAAAAAAFEDD9ShcjwI1QOxRuB6F6y5AFK5H4XrUM0DD9ShcjwI1QI/C9ShczzFA9ihcj8J1MkDsUbgeheslQFK4HoXr0ShAhetRuB4FLkBxPQrXo7AzQK5H4XoU7jFA4XoUrkdhKUBxPQrXo7AzQIXrUbgexTRAmpmZmZnZM0CF61G4HoUlQArXo3A9Ci9AKVyPwvUoFUDsUbgehWsyQEjhehSuRyxAw/UoXI/CC0AzMzMzM7MnQK5H4XoUrilAXI/C9ShcDUDNzMzMzMwoQPYoXI/CdSNA4XoUrkfhK0CuR+F6FC4vQArXo3A9CjJACtejcD0KMkA9CtejcD0YQI/C9ShcTzJA7FG4HoXrKUBSuB6F6xEwQAAAAAAAAAAAcT0K16NwLkDD9Shcj8IdQClcj8L1KDBAKVyPwvUoNEA=","dtype":"float64","order":"little","shape":[49]},"\u0411\u0421":[10189,12140,10147,11049,10760,9604,11669,9255,6080,8435,11355,7731,10729,7958,9857,10599,8363,10378,7750,10961,11385,11209,11092,11821,9058,10557,11457,11794,11339,10863,8043,10537,10607,5610,4772,3944,11448,11698,11130,11130,6346,10286,7835,10354,9216,8665,9299,11976,11803],"\u0411\u043e\u0441\u0441\u044b":["+","+","+","+","+","+","+","+","+","+","+","+","+","+","+","+","+","+","+","+","+","+","+","+","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-","-"],"\u0412 \u0433\u0438\u043b\u044c\u0434\u0438\u0438 \u0441":["2020-10-14","2020-03-27","2020-12-14","2020-06-09","2020-11-15","2020-10-06","2020-11-05","2020-11-23","2020-12-13","2020-12-14","2020-05-14","2020-12-04","2020-11-16","2020-11-18","2020-11-04","2020-09-26","2020-12-07","2020-11-16","2020-12-06","2020-08-04","2020-01-20","2020-12-08","2020-11-28","2020-07-12","2020-10-16","2020-11-10","2020-11-11","2020-07-18","2020-09-23","2020-08-01","2020-11-13","2020-12-08","2020-11-08","2020-12-11","2020-12-01","2020-09-23","2020-11-29","2020-01-02","2020-11-16","2020-11-16","2020-10-16","2020-05-10","2020-11-20","2020-11-25","2020-12-19","2020-11-24","2020-10-15","2020-11-28","2020-10-15"],"\u0418\u043c\u044f":["Mirai97","soulmateq","Osiko","lEsukanorul","\u0425\u0440\u0443\u0441\u0442\u0438\u043b\u0438\u0430\u043d","Akial","AmeRainy","DAICO","DeDy\u0448ka","KarliWolf","Kekch","Lion13","LittteMystic","NeMorf","RmpStiltskin","Supernova157","Sxckforfree","Vedma","staryinaim","\u0414\u0420\u0415\u0410\u0414\u0410","\u041c\u0435\u0434\u0432\u0435\u0415\u0436\u0438\u043a","\u041f\u0430\u043d\u0442\u0438\u0444\u0438\u043a","COM1984","\u042f\u043b\u0438","AlasHan","AlexEkb","Dayzee","EllDiabloo","Ivio","Medvedeff22","Megaklill2020","MurakisTuman","Rasvet","Juinne","aleksty1509","brain23","ils","kiked123","kleshx","kleshx","kvik95","mrVeles","mslordik","repaDragon69","sadinganx","seryogca","\u0445\u0410\u043f\u0438\u041c\u0410\u041d\u0445","\u0410\u0440\u0445\u0438\u043e\u043d","\u0425\u043e\u043c\u0438\u0447"]},"selected":{"id":"1262"},"selection_policy":{"id":"1261"}},"id":"1251","type":"ColumnDataSource"},{"attributes":{},"id":"1267","type":"StringEditor"},{"attributes":{},"id":"1268","type":"StringFormatter"},{"attributes":{},"id":"1269","type":"StringEditor"},{"attributes":{"editor":{"id":"1271"},"field":"\u0411\u043e\u0441\u0441\u044b","formatter":{"id":"1272"},"title":"\u0411\u043e\u0441\u0441\u044b"},"id":"1256","type":"TableColumn"}],"root_ids":["1258"]},"title":"Bokeh Application","version":"2.2.3"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('1486').textContent;
+                  var render_items = [{"docid":"a4c6e6de-821a-4b67-95cd-30648fbe7a47","root_ids":["1258"],"roots":{"1258":"967059cb-8d4e-445e-9f26-72a825b8dcb5"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
